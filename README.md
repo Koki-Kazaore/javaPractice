@@ -1,0 +1,2 @@
+# javaPractice
+Javaのインプット用レポジトリ
