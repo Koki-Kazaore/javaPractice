@@ -17,7 +17,7 @@ public class Hello {
 
     // Cランク1問目
     String S = sc.nextLine();
-    */
+    
     // Cランク2問目
     
     Scanner sc = new Scanner(System.in);
@@ -43,5 +43,20 @@ public class Hello {
 
       System.out.println(present);
     }
+    */
+
+    // Cランク3問目
+    Scanner sc = new Scanner(System.in);
+    int N = sc.nextInt();
+    int D = sc.nextInt();
+    int sum = 0;
+
+    for (int i = 0; i < N - 1; i++){
+      int input = sc.nextInt();
+      sum += input;
+    }
+
+    int area = D * (D * N - sum);
+    System.out.println(area);
   }
 }
