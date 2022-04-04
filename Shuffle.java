@@ -12,6 +12,10 @@ public class Shuffle {
         int setCards = sc.nextInt(); // 1セットあたりの枚数
         int times = sc.nextInt(); // shuffleする回数
 
+        if (setCards == 0){
+            System.out.println("異常が発生しました。");
+        }
+
         int[] startArray = IntStream.rangeClosed(1, allCards).toArray();
         // System.out.println(Arrays.toString(startArray));
 
@@ -53,7 +57,7 @@ public class Shuffle {
 
                 // 追加したゼロの削除
                 startArray = removeZero(updateArray);
-                // System.out.println("途中のAnser: " + Arrays.toString(startArray));
+                // System.外が起きる代表的なケースに、ゼロ除算（0による割り算）があります。以下のプログラムは、実行しても異常終了します。out.println("途中のAnser: " + Arrays.toString(startArray));
             }
 
         } else {
